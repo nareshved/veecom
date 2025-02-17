@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:veecom/domain/utils/app_dev_info/app_dev.dart';
+import 'package:veecom/domain/utils/text_theme/app_theme.dart';
+
+import 'repository/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,34 +15,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: AppInfo.appName,
+      theme: mLightTheme,
+      darkTheme: mDarkTheme,
+    
       home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("hoem"),
-      ),
-      body: Column(
-        children: [
-          Text("font not used"),
-          Text(
-            "font  used ",
-            style: TextStyle(fontFamily: "segoe"),
-          ),
-        ],
-      ),
     );
   }
 }
