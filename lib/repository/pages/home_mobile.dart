@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:veecom/domain/utils/app_dev_info/app_dev.dart';
 
-class HomePageDesktop extends StatelessWidget {
-  const HomePageDesktop({super.key});
+import '../../domain/utils/app_dev_info/app_dev.dart';
+
+class HomePageMobile extends StatelessWidget {
+  const HomePageMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class HomePageDesktop extends StatelessWidget {
       body: Column(
         children: [
           Text(
-            "Desktop page",
+            "mobile page ❤❤❤❤❤❤❤",
             style: TextStyle(fontSize: 30),
           )
         ],
