@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:veecom/domain/utils/app_dev_info/app_dev.dart';
 
+import '../widgets/darkmode/dark_mode.dart';
+
 class HomePageDesktop extends StatelessWidget {
   const HomePageDesktop({super.key});
 
@@ -8,6 +10,7 @@ class HomePageDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IsDarkModeSwitch(),
         title: Text(
           AppInfo.appName,
           style: Theme.of(context)
