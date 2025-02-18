@@ -5,6 +5,17 @@ class ResponsiveApp extends StatelessWidget {
 
   final Widget desktop;
   final Widget mobile;
+
+  // added for height width of screen using media Query for responsive app
+
+  static bool isDesktop(BuildContext context) {
+    return MediaQuery.sizeOf(context).width > MediaQuery.sizeOf(context).height;
+  }
+
+  static bool isMobile(BuildContext context) {
+    return MediaQuery.sizeOf(context).height > MediaQuery.sizeOf(context).width;
+  }
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
