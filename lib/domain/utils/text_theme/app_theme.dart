@@ -6,7 +6,7 @@ final mLightTheme = ThemeData(
   colorScheme: ColorScheme.light(
     brightness: Brightness.light,
     primary: AppColors.lightPrimaryColor,
-    onPrimary: AppColors.lightOnPrimaryColor,
+    // onPrimary: AppColors.lightOnPrimaryColor,
     primaryContainer: AppColors.lightPrimaryContainerColor,
     onPrimaryContainer: AppColors.lightOnPrimaryContainerTextBlackColor,
     secondaryContainer: AppColors.lightSecondaryContainerColor,
@@ -29,7 +29,6 @@ final mDarkTheme = ThemeData(
     onPrimaryContainer: AppColors.darkOnPrimaryContainerColor,
   ),
   textTheme: TextTheme(
-    
       titleSmall: TextStyle(fontFamily: "segoe", fontWeight: FontWeight.normal),
       titleMedium: TextStyle(fontFamily: "segoe", fontWeight: FontWeight.w300),
       titleLarge: TextStyle(fontFamily: "segoe", fontWeight: FontWeight.w400),

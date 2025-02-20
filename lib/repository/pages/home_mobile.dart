@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-
 import '../../domain/utils/app_dev_info/app_dev.dart';
 import '../widgets/darkmode/dark_mode.dart';
 
 class HomePageMobile extends StatelessWidget {
-  const HomePageMobile({super.key});
+  HomePageMobile({super.key});
+
+  final TextEditingController naam = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +22,13 @@ class HomePageMobile extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Text(
-            "mobile page ❤❤❤❤❤❤❤",
-            style: TextStyle(fontSize: 30),
-          )
+          TextField(
+            controller: naam,
+          ),
+          ElevatedButton(onPressed: (){
+            print(naam
+            .text);
+          }, child: Text("tap me"))
         ],
       ),
     );

@@ -24,7 +24,9 @@ class HomePageDesktop extends StatelessWidget {
           Text(
             "Desktop page",
             style: TextStyle(fontSize: 30),
-          )
+          ),
+
+          
         ],
       ),
     );
